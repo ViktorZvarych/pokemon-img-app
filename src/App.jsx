@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import axios from 'axios';
 import './App.css';
 import Pagination from '@mui/material/Pagination';
+import Footer from './Components/Footer'
 
 export default function App() {
   let pokemonsNumberPerPage = useRef(8);
@@ -13,7 +14,7 @@ export default function App() {
   const [imgSrc, setImgSrc] = useState('')
 
   useEffect(() => {
-     // console.log(allPokemonsCount);
+    // console.log(allPokemonsCount);
   }, [allPokemonsCount])
 
   useEffect(() => {
@@ -109,6 +110,8 @@ export default function App() {
               ))
             }
           </ul>
+
+          <Footer />
         </div>
       }
     </>
