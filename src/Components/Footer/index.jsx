@@ -1,12 +1,12 @@
+import { useState } from 'react'
 import styles from './footer.module.css'
 
 export default function Footer() {
-    let thisYear = (new Date()).getFullYear();
-    console.log(thisYear);
+    const [currentYear, setCurrentYear] = useState((new Date()).getFullYear());
 
     return (
         <div className={styles.footer}>
-            <p>© {thisYear} Viktor Zvarych</p>
+            <p>© {currentYear} Viktor Zvarych</p>
         </div>
     )
 }

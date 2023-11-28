@@ -32,7 +32,8 @@ ul {
 }
 
 .pagination button,
-div.css-1v2lvtn-MuiPaginationItem-root {
+.MuiPagination-ul > li > div
+ {
   color: #ffffff;
 }
 
