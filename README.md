@@ -9,5 +9,5 @@ Available live at: https://viktorzvarych.github.io/pokemon-img-app/
 Used instruments:
 - React
 - Vite
-- Axios (fetch)
+- Axios
 - MUI
